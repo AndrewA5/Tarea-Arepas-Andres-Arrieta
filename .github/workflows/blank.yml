@@ -1,0 +1,55 @@
+# cda = 3 cdtas
+# 1 tz = 16 cda
+# _ = último resultado del interpretador
+
+# 1 tza agua
+# 1 tza harina PAN
+# 1 cdta sal
+# 1 cda aceite
+
+#taza = 1
+#cucharadas = 16 cucharadas 
+#cucharaditas =  48 cucharditas para una taza
+
+agua = 1
+harina = 1
+sal =  float (1/16/3)
+aceite = float (1/16)
+
+print("Hola vamos a hacer una arepa, para empezar indicame la cantidad de los ingredientes.")
+print ("\nEstos son los ingredientes:","taza de agua, taza de harina, cucharadita de sal y una cucharada de aceite")
+print ("\nY por ultimo estas son las medidas:taza = 1, cucharadas = 16, cucharaditas =  48, agua = 1")
+
+agua_taza = float(input("\nAgua, si no la desea en esta medida coloque 0(en tazas): "))
+agua_cucharadas = float(input("Agua, si no la desea en esta medida coloque 0(en cucharadas): "))
+agua_cucharaditas = float(input("Agua, si no la desea en esta medida coloque 0(en cucharaditas): "))
+
+harina_taza = float(input("\nHarina, si no la desea en esta medida coloque 0(en tazas): "))
+harina_cucharadas= float(input("Harina, si no la desea en esta medida coloque 0(en cucharadas): "))
+harina_cucharaditas= float(input("Harina, si no la desea en esta medida coloque 0(en cucharaditas): "))
+
+sal_taza = float(input("\nSal, si no la desea en esta medida coloque 0(en taza):"))
+sal_cucharadas = float(input("Sal, si no la desea en esta medida coloque 0(en cucharadas):"))
+sal_cucharaditas = float(input("Sal, si no la desea en esta medida coloque 0(en cucharaditas):"))
+
+aceite_taza =  float(input("\nAceite, si no la desea en esta medida coloque 0(en taza):"))
+aceite_cucharadas =  float(input("Aceite, si no la desea en esta medida coloque 0(en cucharadas ):"))
+aceite_cucharaditas =  float(input("1Aceite, si no la desea en esta medida coloque 0(en cucharaditas ):"))
+
+
+agua_cucharadas = agua_taza / 16
+agua_cucharaditas = agua_taza /48
+
+harina_cucharadas = harina_taza / 16
+harina_cucharaditas = harina_taza /48
+
+sal_cucharadas = sal_taza / 16
+sal_cucharaditas = sal_taza / 48
+
+aceite_cucharadas = aceite_taza/16
+aceite_cucharaditas = aceite_taza / 48
+
+
+sumatoria_de_ingredientes = str(agua_cucharadas + harina_cucharadas + sal_cucharaditas + aceite_cucharadas)
+
+print("\nLa suma total de los ingredientes es:", sumatoria_de_ingredientes)
